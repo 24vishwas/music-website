@@ -725,6 +725,7 @@ li {
     height: 50px;
     object-fit: cover;
   }
+  
   .testimonial .content{
     /* width: 400px; */
   min-height: 250px;
@@ -759,6 +760,15 @@ li {
     justify-content: center;
     margin-inline: auto;
     margin-top: 100px;
+  }
+  @media (max-width:500px) {
+    .testimonial{
+        margin-inline: 50px;
+      }
+      .rings{
+        top: -80px;
+        left: -40px;
+      }
   }
   /* testionail section end */
 
