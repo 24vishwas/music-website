@@ -381,7 +381,11 @@ li {
 
 @media (max-width:500px) {
     .disk-item{
-        width: 145px;
+        width: 115px;
+    }
+    .disk-item span{
+        font-size: 1.2rem;
+    
     }
 }
 
@@ -448,7 +452,11 @@ li {
       height: 100px;
     }
   }
-
+  @media (max-width:767px) {
+    .sound-wave{
+        margin-block: 100px;
+    }
+  }
   /* service-section */
   .service-section{
     position: relative;
@@ -649,7 +657,7 @@ li {
     margin: 10px;
   }
   .brand-slide img{
-    width: 200px;
+    width: 150px;
   }
   
   @media (max-width: 1200px) {
@@ -679,11 +687,14 @@ li {
     }
   }
   /* brands-section end */
-
+.brands-section{
+    margin-block: 10%;
+}
   /* testiminails-section */
 .testimonial-section{
     margin-top: 10%;
 }
+
 .testimonial{
     position: relative;
     margin-top: 50px;
@@ -770,6 +781,15 @@ li {
         left: -40px;
       }
   }
+  @media (max-width:767px) {
+    .testimonial-section .section-heading{
+        margin-bottom: 50px;
+    }
+    .slider-btns{
+        margin-top: 50px;
+        gap: 20px;
+    }
+}
   /* testionail section end */
 
   /* portfolio section */
@@ -831,6 +851,9 @@ li {
     .music{
         width: 95%;
     }
+    .portfolio-section{
+        margin-block: 100px;
+    }
 }
 /* music section end */
 
@@ -881,9 +904,11 @@ li {
     }
     .project-section .content{
         width: 100%;
-        padding: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 50px;
         text-align: center;
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
     }
     .project-section .content .secondary-btn{
         margin-inline: auto;
@@ -1033,6 +1058,31 @@ footer .footer-about p{
 .socials-links img{
     width: 20px;
     aspect-ratio: 1/1;
+}
+@media (max-width:600px) {
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        text-align: center;
+    }
+    footer .footer-about{
+        width: 80%;
+    }
+    .footer-links-container{
+        width: 80%;
+    }
+    .footer-links-container > ul{
+        justify-content: center;
+    }
+    .footer-contact-container{
+        justify-content: center;
+    }
+    .socials-links{
+        text-align: center;
+    }
 }
 /* end */
 

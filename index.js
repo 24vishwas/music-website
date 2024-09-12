@@ -21,8 +21,8 @@ function checkOrientation() {
 
 // disk slider 
 var swiper = new Swiper(".disk-slider", {
-  spaceBetween: 30,
-  slidesPerView: 2,
+  spaceBetween: 10,
+  slidesPerView: 3,
   loop: true,
   centeredSlides: true,
   autoplay: {
