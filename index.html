@@ -343,48 +343,19 @@
     <section class="portfolio-section">
         <span class="section-subheading">Our portfolio</span>
         <h1 class="section-heading">Recent Records</h1>
-        <div class="music-list">
-            <div class="music">
-                <div class="content">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <span>Lorem, ipsum</span>
-                </div>
-                <div class="controls">
-                    <div>&#9658;</div>
-                    <p>00:00</p>
-                </div>
-            </div>
-            <div class="music">
-                <div class="content">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <span>Lorem, ipsum</span>
-                </div>
-                <div class="controls">
-                    <div>&#9658;</div>
-                    <p>00:00</p>
-                </div>
-            </div>
-            <div class="music">
-                <div class="content">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <span>Lorem, ipsum</span>
-                </div>
-                <div class="controls">
-                    <div>&#9658;</div>
-                    <p>00:00</p>
-                </div>
-            </div>
-            <div class="music">
-                <div class="content">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <span>Lorem, ipsum</span>
-                </div>
-                <div class="controls">
-                    <div>&#9658;</div>
-                    <p>00:00</p>
-                </div>
+        <div class="music-player">
+            <h2>Music Playlist</h2>
+            <ul id="song-list">
+                <!-- Songs will be dynamically added here -->
+            </ul>
+            <div class="seek-bar">
+                <button id="global-play-pause"><img src="./assets/play.svg" alt="Play"></button> 
+                <input type="range" id="seek-slider" value="0" max="100">
+                <span id="time-remaining">0:00</span>
             </div>
         </div>
+    
+        <audio id="audio-player"></audio>
         <a href="#" class="primary-btn">View More</a>
     </section>
     <section class="project-section">
@@ -459,6 +430,8 @@
             <li><a href="#"><img src="./assets/socials/cloud.svg" alt="youtube"></a></li>
         </ul>
     </div>
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
